@@ -1,3 +1,7 @@
-#results #quiz  {
+#results, #quiz  {
   display: none
+}
+
+#intro {
+  font-style: italic;
 }
