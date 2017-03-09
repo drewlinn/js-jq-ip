@@ -1,23 +1,26 @@
 //business logic
-var quesTion1 = (".question1#input")
-var quesTion2 = (".question2#input")
-var quesTion3 = (".question3#input")
-var quesTion4 = (".question4#input")
-var quesTion5 = (".question5#input")
+
 
 //user interface logic
 $(document).ready(function()  {
-  $("form btn").submit(function(event){
+  $("#results").hide();
+  $("#quiz").submit(function(event){
     event.preventDefault();
-    if (quesTion1 === "A" && quesTion2 === "A" && quesTion3 === "A" && quesTion4 === "A" && quesTion5 === "A") {
-      $("#NewYork").show();
-    } else if (quesTion1 === "B" && quesTion2 === "B" && quesTion3 === "B" && quesTion4 === "B" && quesTion5 === "B") {
-      $("#Chicago").show();
-    } else if (quesTion1 === "C" && quesTion2 === "C" && quesTion3 === "C" && quesTion4 === "C" && quesTion5 === "C") {
-      $("#Charleston").show();
-    }  else if (quesTion1 === "D" && quesTion2 === "D" && quesTion3 === "D" && quesTion4 === "D" && quesTion5 === "D") {
-      $("#LasVegas").show();
+    var question1 = $('input:radio[name=question1]:checked').val();
+    var question2 = $("input:radio[name=question2]:checked").val();
+    var question3 = $("input:radio[name=question3]:checked").val();
+    var question4 = $("input:radio[name=question4]:checked").val();
+    var question5 = $("input:radio[name=question5]:checked").val();
+      $("#quiz").hide();
+      if (question1 === "A" && question2 === "A" && question3 === "A" && question4 === "A" && question5 === "A") {
+      $("#results#NewYork").show();
+    } else if (question1 === "B" && question2 === "B" && question3 === "B" && question4 === "B" && question5 === "B") {
+      $("#results#Chicago").show();
+    } else if (question1 === "C" && question2 === "C" && question3 === "C" && question4 === "C" && question5 === "C") {
+      $("#results#Charleston").show();
+    }  else if (question1 === "D" && question2 === "D" && question3 === "D" && question4 === "D" && question5 === "D") {
+      $("#results#LasVegas").show();
+    }
 
-      $(destiNation)
   });
 });

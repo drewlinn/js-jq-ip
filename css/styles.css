@@ -1,8 +1,9 @@
 body{
-  background: #005ce6 url(http://cdn.paper4pc.com/images/airplane-silhouette-in-the-sky-wallpaper-1.jpg) no-repeat fixed center;
+  background: url(../img/background.jpg) no-repeat fixed center;
+  background-size: cover;
 };
 
-#results {
+#results, #NewYork, #Chicago, #Charleston, #LasVegas{
   font-style: italic;
 };
 
