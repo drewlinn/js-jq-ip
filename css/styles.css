@@ -1,7 +1,40 @@
-#results, #quiz  {
-  display: none
-}
+body{
+  background: #005ce6 url(http://cdn.paper4pc.com/images/airplane-silhouette-in-the-sky-wallpaper-1.jpg) no-repeat fixed center;
+};
+
+#results {
+  font-style: italic;
+};
 
 #intro {
+  margin: 12px;
+  border: 2px solid black;
+  padding: 8px;
+  background-color: #DE7030;
   font-style: italic;
-}
+};
+
+#quiz {
+  margin: 12px;
+  border: 2px solid black;
+  padding:8px;
+  background-color: #DE7030;
+};
+
+img {
+  margin: 12px;
+  border: 2px solid black;
+  padding: 8px;
+};
+
+ h1 {
+   font-weight: bold;
+   color: blue;
+ };
+
+ .question1, .question2, .question3, .question4, .question5 {
+   margin: 12px;
+   border: 2px solid black;
+   padding:8px;
+   background-color: #DE7030;
+ };
