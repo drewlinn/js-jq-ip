@@ -3,24 +3,30 @@
 
 //user interface logic
 $(document).ready(function()  {
-  $("#results").hide();
+  $("#NewYork").hide();
+  $("#Chicago").hide();
+  $("#Charleston").hide();
+  $("#LasVegas").hide();
   $("#quiz").submit(function(event){
     event.preventDefault();
-    var question1 = $('input:radio[name=question1]:checked').val();
-    var question2 = $("input:radio[name=question2]:checked").val();
-    var question3 = $("input:radio[name=question3]:checked").val();
-    var question4 = $("input:radio[name=question4]:checked").val();
-    var question5 = $("input:radio[name=question5]:checked").val();
+    var q1 = $('input:radio[name=question1]:checked').val();
+    var q2 = $("input:radio[name=question2]:checked").val();  
+    var q3 = $("input:radio[name=question3]:checked").val();
+    var q4 = $("input:radio[name=question4]:checked").val();
+    var q5 = $("input:radio[name=question5]:checked").val();
     $("#quiz").hide();
-    if (question1 === "A" && question2 === "A" && question3 === "A" && question4 === "A" && question5 === "A") {
+    if (q1 === "A" && q2 === "A" && q3 === "A" && q4 === "A" && q5 === "A") {
     $("#NewYork").show();
-  } else if (question1 === "B" && question2 === "B" && question3 === "B" && question4 === "B" && question5 === "B") {
+    } else if (q1 === "B" && q2 === "B" && q3 === "B" && q4 === "B" && q5 === "B") {
     $("#Chicago").show();
-  } else if (question1 === "C" && question2 === "C" && question3 === "C" && question4 === "C" && question5 === "C") {
+    } else if (q1 === "C" && q2 === "C" && q3 === "C" && q4 === "C" && q5 === "C") {
     $("#Charleston").show();
-  }  else if (question1 === "D" && question2 === "D" && question3 === "D" && question4 === "D" && question5 === "D") {
+    }  else if (q1 === "D" && q2 === "D" && q3 === "D" && q4 === "D" && q5 === "D") {
     $("#LasVegas").show();
-  }
-
+    }
+  $("#results").submit(function(event)  {
+    $("#results").hide();
+    $("#quiz").show();
+  });
   });
 });
