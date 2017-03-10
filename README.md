@@ -10,11 +10,11 @@ This webpage helps the user decide on a vacation destination.
 
 Setup/Installation Requirements
 
-Go to https://drewlinn.github.io/js-jq-ip to open the page. Answer the quiz questions and press the submit button for each one until you receive your destination.
+Go to https://drewlinn.github.io/js-jq-ip using your web browser to open the page. Answer the quiz questions and press the submit button for each one until you receive your destination.
 
 Known Bugs
 
-None currently.
+Still needs to allow for more possible different answers to get more varied results.
 
 Support and contact details
 
