@@ -1,41 +1,41 @@
 body{
   background: url(../img/background.jpg) no-repeat fixed center;
   background-size: cover;
-};
-
-#results, #NewYork, #Chicago, #Charleston, #LasVegas{
-  font-style: italic;
-};
+}
 
 #intro {
   margin: 12px;
   border: 2px solid black;
   padding: 8px;
-  background-color: #DE7030;
+  background-color: #cc7300;
   font-style: italic;
-};
+}
 
 #quiz {
   margin: 12px;
   border: 2px solid black;
   padding:8px;
-  background-color: #DE7030;
-};
+  background-color: #cc7300;
+}
 
 img {
   margin: 12px;
   border: 2px solid black;
   padding: 8px;
-};
+}
 
  h1 {
+   margin: 12px;
+   border: 2px solid black;
+   padding: 8px;
    font-weight: bold;
-   color: blue;
- };
+   background-color: #cc7300;
+   color: #000633;
+ }
 
  .question1, .question2, .question3, .question4, .question5 {
    margin: 12px;
    border: 2px solid black;
    padding:8px;
-   background-color: #DE7030;
- };
+   background-color: #cc7300;
+ }
